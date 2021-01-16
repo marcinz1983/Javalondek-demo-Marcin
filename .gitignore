@@ -1,0 +1,5 @@
+# use / after directory
+target/
+.idea/
+
+javalondek-demo.iml
