@@ -24,6 +24,24 @@ public class HelloLambda {
             }
         });
 
+        //using lambda
+
+
+        handleRunner(() -> System.out.println("inside lambda call"));
+        Runner myFirstLambda = () -> {};
+        Runner mySecoundLambda = () -> {
+            System.out.println("inside my secoundLambda");
+        };
+
+        Runner myThirdLambda =() -> System.out.println("my third lambda");
+
+            Runner myFourthLambda = () -> System.out.println("fourth Lambda");
+
+            myFourthLambda.go();
+            myFourthLambda.go(55);
+            Runner.walk();
+
+
     }
 
     public  static  void handleRunner(Runner anyRunner){
