@@ -1,6 +1,6 @@
 package pl.sda.javalondek4.java_demo.lambda;
 
-public class RunnerImplementation implements Runner{
+public class MarcinRunner implements Runner{
 
     @Override
     public void go() {
