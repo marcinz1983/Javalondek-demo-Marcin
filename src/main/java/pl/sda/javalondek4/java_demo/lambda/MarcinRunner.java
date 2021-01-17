@@ -7,6 +7,11 @@ public class MarcinRunner implements Runner{
         System.out.println("go go");
     }
 
+    @Override
+    public void go(int speed) {
+        System.out.println("method go speed");
+    }
+
     public  void walk(){
         System.out.println("walk");
     }
