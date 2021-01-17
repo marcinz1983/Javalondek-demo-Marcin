@@ -42,6 +42,7 @@ public class HelloLambda {
             Runner.walk();
 
 
+
     }
 
     public  static  void handleRunner(Runner anyRunner){
