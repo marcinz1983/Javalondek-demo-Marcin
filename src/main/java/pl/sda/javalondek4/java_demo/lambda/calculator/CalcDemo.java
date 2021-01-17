@@ -6,9 +6,9 @@ public class CalcDemo {
         System.out.println("playing with calculator lambdas");
 
 
-        Adder adder1 = (int a, int b) -> a+b;
+        Adder<Integer> adder1 = (Integer a , Integer b) -> a+b;
 
-        Adder adder = (a,b) -> a+b;
+        Adder<Integer> adder = (a,b) -> a+b;
 
 
 
@@ -26,11 +26,12 @@ public class CalcDemo {
         myAdder.addWithComment(5,6,"wynik 11");
 
 
-        Substruction substruction = (a,b) -> a-b;
-        Division division = (a, b) -> a/b;
+        Substruction<Integer> substruction = (a,b) -> a-b;
+        Division<Double> division = (a, b) -> a/b;
 
-        Mult mult = (a,b) ->a*b;
+        Mult<Integer> mult = (a,b) ->a*b;
 
+        Operation<Double> divisionOpreation = (a, b) -> a/b;
 
 
     }
