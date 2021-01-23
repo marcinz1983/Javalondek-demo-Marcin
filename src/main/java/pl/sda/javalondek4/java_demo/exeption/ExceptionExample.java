@@ -33,5 +33,22 @@ public class ExceptionExample {
       //  System.out.println("????");
 
 
+        System.out.println(" with dealer :)");
+        NIckDealer nIckDealer = new NIckDealer( new ExceptionGenerator());
+        String myNickDealer;
+        try {
+            myNickDealer =  nIckDealer.nickFromDealer();
+        } catch (NoNickException e) {
+            myNickDealer = "deafoult nick name";
+            System.out.println("masege from myDealer");
+        }
+        System.out.println("here???");
+
+        try {
+
+            myNickDealer =nIckDealer.nick();
+        }catch (NoNickRuntimeException exc){
+            myNickDealer = "unexpection value....";
+        }
     }
 }
