@@ -7,7 +7,7 @@ public class ExceptionExample {
         String myNick;
         try {
            myNick = exceptionGenerator.nick();
-        } catch (NoNickException e) {
+        } catch (NoNickCheckedException e) {
             System.out.println("Problem with nick generator..");
             myNick = "this user has no nick";
         }finally {
@@ -18,7 +18,7 @@ public class ExceptionExample {
 
         try {
             myNick= exceptionGenerator.nickWithRunTimeException();
-        }catch (NoNickRuntimeException e){
+        }catch (NoNickRuntimeExc e){
             System.out.println("wyjatek z RuntimeException");
             myNick = "Przypisanie z runtimeExcepion";
         }
@@ -38,7 +38,7 @@ public class ExceptionExample {
         String myNickDealer;
         try {
             myNickDealer =  nIckDealer.nickFromDealer();
-        } catch (NoNickException e) {
+        } catch (NoNickCheckedException e) {
             myNickDealer = "deafoult nick name";
             System.out.println("masege from myDealer");
         }
@@ -47,7 +47,7 @@ public class ExceptionExample {
         try {
 
             myNickDealer =nIckDealer.nick();
-        }catch (NoNickRuntimeException exc){
+        }catch (NoNickRuntimeExc exc){
             myNickDealer = "unexpection value....";
         }
     }
