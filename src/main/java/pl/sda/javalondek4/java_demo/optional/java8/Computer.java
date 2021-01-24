@@ -1,5 +1,7 @@
 package pl.sda.javalondek4.java_demo.optional.java8;
 
+import java.util.Optional;
+
 public class Computer {
 
     private GraphicsCard graphicsCard;
@@ -9,8 +11,8 @@ public class Computer {
     }
 
 
-    public GraphicsCard getGraphicsCard() {
-        return graphicsCard;
+    public Optional<GraphicsCard> getGraphicsCard() {
+        return Optional.ofNullable(graphicsCard);
     }
 
 

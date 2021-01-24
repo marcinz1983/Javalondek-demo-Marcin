@@ -1,5 +1,7 @@
 package pl.sda.javalondek4.java_demo.optional.java8;
 
+import java.util.Optional;
+
 public class GraphicsCard {
 
     private String model;
@@ -9,8 +11,9 @@ public class GraphicsCard {
     }
 
 
-    public String getModel() {
-        return model;
+    public Optional<String> getModel() {
+
+        return Optional.ofNullable(model);
     }
 
 

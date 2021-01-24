@@ -24,6 +24,16 @@ public class ComputerUtils {
         return result;
     }
 
+    public  static  String getModelWithJava8(Computer computer){
+         return Optional.ofNullable(computer)
+                .map(comp -> comp.getGraphicsCard())
+                .map(graphicsCard -> graphicsCard.getModel())
+                .orElse("no model");
+
+    }
+
+
+
     public static void main(String[] args) {
         Computer withoutGraphicsCard = new Computer(null);
         Computer withUnknownModel = new Computer(new GraphicsCard(null));
