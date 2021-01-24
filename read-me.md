@@ -4,7 +4,7 @@ Git - good practices* commit powinien mieć dobry opis
 * podróżuj po historii i branchach tylko przy czystym drzewie roboczym
 * usuwanie branch'y 
     * zmergowany branch można usunąć
-    * nie powinniśmy usuwać nie zmergowanych branch'y
+    * nie powinniśmy usuwać nie zmergowanych branch'y bo nie będziemy w stanie wrócić do nich
     * nie usuwamy branch'a na którym aktualnie się znajdujemy:)
 * git flow - w skrócie
     * master - branch release'owy
