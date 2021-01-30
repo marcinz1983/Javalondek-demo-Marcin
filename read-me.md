@@ -11,6 +11,12 @@ Git - good practices* commit powinien mieć dobry opis
     * develop - branch developerski
     * feature branch - branch do rozwoju funkcjonalności
     * feature branch - powinien startować od developa i do niego finalnie zostać zmergowanyGit - przydatne komendy
+* branch
+    * wlasny branch nie musi byc idealny( moze nie dzialac , moze zawierac komentarze fixme i todo),
+    ale wyslanie marge requesta z tego brancha musi zawierac "piekny kod"
+
+
+Git - Przydatne komendy:
 git status
 git add .
 git commit -m "[tag] - message"
