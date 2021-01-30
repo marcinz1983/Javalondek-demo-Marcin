@@ -19,6 +19,8 @@ Git - good practices* commit powinien mieć dobry opis
 Git - Przydatne komendy:
 git status
 git add .
+git add file-name
+git add file-name file-name2
 git commit -m "[tag] - message"
 git restore --staged file-name // zdejmij ze stage'a
 git checkout branch-name // przełącz się na branch-name
