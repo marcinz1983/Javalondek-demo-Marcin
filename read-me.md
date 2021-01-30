@@ -7,6 +7,10 @@ Git - good practices* commit powinien mieć dobry opis
     * develop - branch developerski
     * feature branch - branch do rozwoju funkcjonalności
     * feature branch - powinien startować od developa i do niego finalnie zostać zmergowany
+    * przed mergem brancha feature'owego do jednego z głównych (develop lub master) najpierw zmerguj główny do obecnego (wymuszony commit mergujący)    
+    * później na głównym branchu możemy zmergować ten feature'owy za pomocą fast forward
+    
+    
 * branch
     * własny branch nie musi być idealny (może nie działać, może zawierać komentarze FIXME/TODO),
       ale wysłanie merge requesta z tego brancha musi zawierać "piękny kod"
