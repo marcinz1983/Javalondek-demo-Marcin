@@ -16,6 +16,9 @@ public class Kitchen {
         return Optional.ofNullable(inductionHob);
     }
 
+
+
+
     public void setInductionHob(InductionHob inductionHob) {
         this.inductionHob = inductionHob;
     }
